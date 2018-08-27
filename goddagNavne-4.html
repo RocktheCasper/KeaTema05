@@ -8,13 +8,14 @@
 
 <body>
     <script>
+        //Definerer prompt-tekst 1 og 2
         let navn = prompt("Hvad hedder du?");
         let efterNavn = prompt("Og dit efternavn?")
-
+        //Definerer output til at være enten begge navne eller kun et af gangen alt efter input.
         if (navn != null || navn != "" && efterNavn != null || efterNavn != "") {
             alert("Goddag, " + navn + " " + efterNavn);
         }
-
+        //Reload
         let forfra = confirm("Vil du starte forfra?");
         if (forfra) {
             location.reload();
