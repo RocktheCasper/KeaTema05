@@ -8,7 +8,17 @@
 
 <body>
     <script>
+        let navn = prompt("Hvad hedder du?");
+        let efterNavn = prompt("Og dit efternavn?")
 
+        if (navn != null || navn != "" && efterNavn != null || efterNavn != "") {
+            alert("Goddag, " + navn + " " + efterNavn);
+        }
+
+        let forfra = confirm("Vil du starte forfra?");
+        if (forfra) {
+            location.reload();
+        }
 
     </script>
 </body>
