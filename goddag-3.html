@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body>
+    <script>
+        let navn = prompt("Hvad hedder du?");
+
+        if (navn != null && navn != "") {
+            alert("Goddag, " + navn);
+        } else {
+            alert("Goddag, min ven.");
+        }
+        let forfra = confirm("Vil du starte forfra?");
+        if (forfra) {
+            location.reload();
+        }
+
+    </script>
+</body>
+
+</html>

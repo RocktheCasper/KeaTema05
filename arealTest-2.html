@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body>
+    <script>
+        //Tilfældige numeriske værdier tildeles længde og bredde
+        let length = Math.round(Math.random() * 50);
+        let width = Math.round(Math.random() * 50);
+        //Arealet udregnes ud fra de tilfældige værdier
+        let areal = (width * length);
+
+
+        //Arealets intervaller bestemmes og udskrives baseret på den tilfældige numeriske værdi
+
+        //Hvis arealet er under 100
+        if (areal <= 100) {
+            console.log("Arealet er for lille.");
+        }
+        //Hvis arealet er mellem 100 og 200
+        if (areal > 100 && areal < 200) {
+            console.log("Arealet er passende.");
+        }
+        //Hvis arealet er over 200
+        if (areal >= 200) {
+            console.log("Arealet er for stort.");
+        }
+
+        //Udskriver tallet for at sikre det rigtige output//
+        console.log(areal);
+
+    </script>
+
+</body>
+
+</html>
