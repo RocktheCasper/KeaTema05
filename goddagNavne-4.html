@@ -8,18 +8,27 @@
 
 <body>
     <script>
-        //Definerer prompt-tekst 1 og 2
-        let navn = prompt("Hvad hedder du?");
-        let efterNavn = prompt("Og dit efternavn?")
-        //Definerer output til at være enten begge navne eller kun et af gangen alt efter input.
-        if (navn != null || navn != "" && efterNavn != null || efterNavn != "") {
-            alert("Goddag, " + navn + " " + efterNavn);
+        //Definerer prompt-tekst 1 og 2 og basal besked.
+        let forNavn = prompt("Hvad hedder du?"),
+            efterNavn = prompt("Og dit efternavn?"),
+            baseMessage;
+
+        baseMessage = "Goddag,";
+
+        //Hvis fornavn oplyses tilføjes dette til base message.
+        if (forNavn != "" && fornavn != null) {
+            baseMessage += " " + forNavn;
         }
-        //Reload
-        let forfra = confirm("Vil du starte forfra?");
-        if (forfra) {
-            location.reload();
+        //Ligeledes, hvis efternavn oplyses tilføjes dette til base message.
+        if (efterNavn != "" && efterNavn != null) {
+            basemessage += " " + efterNavn;
         }
+        //Hvis intet oplyses tilføjes "min ven" til base message.
+        if (baseMessage == "Goddag,") {
+            baseMessage += " min ven.";
+        }
+        //Endelig besked.
+        alert(baseMessage);
 
     </script>
 </body>
