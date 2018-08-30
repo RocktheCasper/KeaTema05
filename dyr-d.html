@@ -18,7 +18,7 @@
     </div>
 
     <script>
-        //Definerer et array med informationer om givent dyr.
+        //Definerer informationer ordnet i dele om givent dyr.
         let dyr = {
             "navn": "Gila Monster",
             "type": "krybdyr",
@@ -27,20 +27,21 @@
 
         };
 
-        let dyrbillede = document.querySelector('[data-label="gilamonster"] img');
 
         //Udskriver besked til console med henvendelser til hver enkel variabel i array.
         let besked = ("Et " + dyr.navn + " er et " + dyr.type + " som lever i " + dyr.levested);
 
 
         console.log(besked);
-        document.addEventListener("DOMContentLoaded", start);
 
+        document.addEventListener("DOMContentLoaded", start);
+        //Forordner delinfo og indsætter billede i html tag.
         function start() {
             document.querySelector(".navn").textContent = dyr.navn + ": ";
             document.querySelector(".info").textContent = "et " + dyr.type + " , som lever i " + dyr.levested;
             document.querySelector(".dyr img").src = dyr.billede;
         }
+
     </script>
 
 </body>
