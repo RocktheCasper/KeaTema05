@@ -9,10 +9,11 @@
 
 <body>
     <div class="dyr">
-        <span><strong class="navn"></strong>
-            <p class="info"></p>
-            <div class="dyrbillede"><img src=""></div>
-        </span>
+        <strong class="navn"></strong>
+        <br><img alt="" src="">
+        <p class="info"></p>
+
+
 
     </div>
 
@@ -21,11 +22,12 @@
         let dyr = {
             "navn": "Gila Monster",
             "type": "krybdyr",
-            "levested": "Mexico"
+            "levested": "Mexico",
+            "billede": "gilamonster.jpg",
 
         };
-        let gilamonster = "gilamonster.jpg";
 
+        let dyrbillede = document.querySelector('[data-label="gilamonster"] img');
 
         //Udskriver besked til console med henvendelser til hver enkel variabel i array.
         let besked = ("Et " + dyr.navn + " er et " + dyr.type + " som lever i " + dyr.levested);
@@ -37,7 +39,7 @@
         function start() {
             document.querySelector(".navn").textContent = dyr.navn + ": ";
             document.querySelector(".info").textContent = "et " + dyr.type + " , som lever i " + dyr.levested;
-            document.querySelector(".dyrbillede").textContent = gilamonster;
+            document.querySelector(".dyr img").src = dyr.billede;
         }
     </script>
 
