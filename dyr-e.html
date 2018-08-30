@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dyr-e</title>
+    <style>
+        img {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dyr">
+
+
+
+
+    </div>
+
+    <script>
+        //Definerer 3 dyr i array med tilhørende klassifikationer.
+        let dyr = [{
+            "navn": "Gila Monster",
+            "type": "krybdyr",
+            "levested": "Mexico",
+            "billede": "gilamonster.jpg"
+
+        }, {
+            "navn": "Rød Panda",
+            "type": "pattedyr",
+            "levested": "Kina",
+            "billede": "roedpanda.jpg"
+        }, {
+            "navn": "Asiatisk Dværgodder",
+            "type": "pattedyr",
+            "levested": "Asien",
+            "billede": "odder.jpg"
+        }, ];
+
+
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+
+
+        function start() {
+            dyr.forEach(dyr => {
+                document.querySelector(".dyr").innerHTML += "<img src='" + dyr.billede + "'alt=''>" + dyr.navn + ": " + dyr.type + " fra " + dyr.levested + " <br> ";
+
+
+
+            })
+        }
+    </script>
+
+</body>
+
+</html>
+<style></style>
+<script></script>
