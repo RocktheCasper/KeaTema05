@@ -8,7 +8,12 @@
 </head>
 
 <body>
-    <div class="dyr"></div>
+    <div class="dyr">
+        <span><strong class="navn"></strong>
+            <p class="info"></p>
+        </span>
+
+    </div>
 
     <script>
         //Definerer et array med informationer om givent dyr.
@@ -25,10 +30,11 @@
 
 
         console.log(besked);
-        document.addEventlistener("DOMContentLoaded", start);
+        document.addEventListener("DOMContentLoaded", start);
 
         function start() {
-            document.querySelector(".dyr").textContent = besked;
+            document.querySelector(".navn").textContent = dyr.navn + ": ";
+            document.querySelector(".info").textContent = "et " + dyr.type + " , som lever i " + dyr.levested;
         }
     </script>
 
